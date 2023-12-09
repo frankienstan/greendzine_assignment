@@ -1,0 +1,207 @@
+#root {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.canvas {
+  min-width: 350px;
+  background: transparent
+    linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 14, 9, 1) 100%) 0% 0%
+    no-repeat padding-box;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* navigation */
+.navigation {
+  border-radius: 6px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  background: transparent
+    linear-gradient(262deg, rgba(15, 35, 35, 1) 0%, rgba(15, 35, 35, 1) 40%) 0%
+    0% no-repeat padding-box;
+}
+.icons {
+  width: 28px;
+  height: 28px;
+}
+.icon_box {
+  padding: 10px 50px;
+  cursor: pointer;
+}
+.active {
+  border-radius: 36px;
+  background: rgba(56, 56, 56, 0.5);
+}
+/* Dashboard css */
+.call_container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.call_button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.moptro_number_container {
+  color: #36a546;
+  position: relative;
+  left: 56%;
+  top: 6%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* background: linear-gradient(145deg, rgba(40, 39, 39, 0.65), rgba(44, 44, 44, 0.54)); */
+  box-shadow: 2px 2px 10px rgba(40, 40, 40, 0.93),
+    -2px -2px 10px rgba(77, 77, 77, 0.39);
+}
+.moptro_number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.dashboard {
+  margin-top: 40px;
+  margin-bottom: 49px;
+  background: rgba(94, 94, 94, 0.2);
+  border: none;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 320px;
+  border-radius: 24px;
+}
+.dashboard_title {
+  padding: 10px 20px;
+  text-align: center;
+  letter-spacing: 0.01px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(26, 44, 44, 0.9);
+  font-size: 16px;
+  border-radius: 24px;
+}
+/* Progress bar */
+
+.progress_bars {
+  padding: 20px 12px;
+}
+.progress-bar {
+  position: relative;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.progress {
+  color: #36a54680;
+  border: 1px solid #36a546;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #36a54680;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.day,
+.progress_percentage {
+  position: absolute;
+  top: -20px;
+  font-size: 12px;
+  color: #333;
+}
+
+.day {
+  left: 0px;
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 0.01px;
+}
+
+.progress_percentage {
+  right: 0px;
+  color: #36a546;
+  letter-spacing: 0.01px;
+}
+/* Employeees */
+.employees_dash {
+  margin: 10px 5px;
+}
+.input_box {
+  margin: 17px 50px 17px 30px;
+  border-radius: 24px;
+  padding: 10px 20px;
+  background: rgba(94, 94, 94, 0.2);
+  box-shadow: 2px 2px 10px rgba(28, 27, 27, 0.89),
+    -2px -2px 10px rgba(43, 43, 43, 0.14);
+}
+.input_box input {
+  border: 0;
+  background-color: transparent;
+  width: 200px;
+  &:focus {
+    outline: none;
+    letter-spacing: 0.01px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.input_box input::placeholder {
+  letter-spacing: 0.01px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  font-weight: bold;
+}
+.emp {
+  box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(94, 94, 94, 0.2);
+  width: 100%;
+  padding: 20px 15px;
+  margin-top: 14px;
+  text-align: left;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+.emp_list {
+  height: 365px;
+  margin: 10px 15px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(94, 94, 94, 0.2) rgba(255, 166, 0, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+.emp_list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.emp_list::-webkit-scrollbar-track {
+  display: none;
+}
+
+.emp_id,
+.emp_Name,
+.emp_DOB,
+.emp_Role {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.emp_DOB {
+  color: rgba(183, 116, 32, 1);
+}
+.emp_Role {
+  color: rgba(54, 165, 70, 1);
+}
