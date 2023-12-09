@@ -12,3 +12,4 @@ Currently, two official plugins are available:
 # greendzine_assignment
 # greendzine_assignment
 # greendzine_assignment
+# greendzine_assignment
