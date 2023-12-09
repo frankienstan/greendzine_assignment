@@ -3,21 +3,19 @@ import ProgressBar from "./ProgressBar";
 import Navigation from "./Navigation";
 import moptro_logo from "./assets/moptro_logo.png";
 import call_logo from "./assets/call.png";
-//import './Dashboard.css'; // Import your CSS file for styling
 
 const Dashboard = () => {
   return (
     <div>
-      {/* Call container, Moptro container, etc. remain unchanged */}
       <div className="call_container">
-        <img src={call_logo} alt="call_button" className="call_button" />
+        <img src={call_logo} className="call_button" />
       </div>
       <div className="moptro_container">
         <div className="moptro_number_container">
           <div className="moptro_number">4</div>
         </div>
 
-        <img src={moptro_logo} alt="" className="moptro_logo" />
+        <img src={moptro_logo} className="moptro_logo" />
       </div>
       <div className="dashboard">
         <div className="dashboard_title">Employee Productivity Dashboard</div>
