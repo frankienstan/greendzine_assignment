@@ -2,13 +2,12 @@ import React from "react";
 import ProgressBar from "./ProgressBar";
 import Navigation from "./Navigation";
 import moptro_logo from "./assets/moptro_logo.png";
-import call_logo from "./assets/call.png";
 
 const Dashboard = () => {
   return (
     <div>
       <div className="call_container">
-        <img src={call_logo} className="call_button" />
+        {/* <img src={call_logo} className="call_button" /> */}
       </div>
       <div className="moptro_container">
         <div className="moptro_number_container">
