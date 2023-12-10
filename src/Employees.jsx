@@ -86,7 +86,7 @@ const Employees = () => {
   };
 
   return (
-    <div className="employees_dash">
+    <div className="employees_screen">
       <div className="call_container">
         <img src={call} alt="call_button" className="call_button" />
       </div>
@@ -97,30 +97,32 @@ const Employees = () => {
 
         <img src={moptro_logo} alt="" className="moptro_logo" />
       </div>
-      <div className="input_box">
-        <input
-          type="text"
-          placeholder="Search by name..."
-          value={searchTerm}
-          onChange={handleSearch}
-          className="search_input"
-        />
-      </div>
-      <div className="emp_list">
-        {selectedEmployee ? (
-          <Employee_details employee={selectedEmployee} />
-        ) : (
-          searchResults.map((employee) => (
-            <Employee
-              key={employee.id}
-              id={employee.id}
-              name={employee.name}
-              dob={employee.dob}
-              role={employee.role}
-              onClick={handleEmployeeClick}
-            />
-          ))
-        )}
+      <div className="emps_container">
+        <div className="input_box">
+          <input
+            type="text"
+            placeholder="Search by name..."
+            value={searchTerm}
+            onChange={handleSearch}
+            className="search_input"
+          />
+        </div>
+        <div className="emp_list">
+          {selectedEmployee ? (
+            <Employee_details employee={selectedEmployee} />
+          ) : (
+            searchResults.map((employee) => (
+              <Employee
+                key={employee.id}
+                id={employee.id}
+                name={employee.name}
+                dob={employee.dob}
+                role={employee.role}
+                onClick={handleEmployeeClick}
+              />
+            ))
+          )}
+        </div>
       </div>
     </div>
   );

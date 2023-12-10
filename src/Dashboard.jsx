@@ -6,7 +6,7 @@ import call from "/call.png";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard_screen">
       <div className="call_container">
         <img src={call} className="call_button" />
       </div>
