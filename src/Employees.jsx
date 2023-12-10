@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Employee from "./Employee";
 import Employee_Details from "./Employee_Details";
 import moptro_logo from "./assets/moptro_logo.png";
-import call_logo from "./assets/call.png";
+import call from "./assets/call.png";
 
 // Employees Component displaying multiple employees
 const Employees = () => {
@@ -88,7 +88,7 @@ const Employees = () => {
   return (
     <div className="employees_dash">
       <div className="call_container">
-        <img src={call_logo} alt="call_button" className="call_button" />
+        <img src={call} alt="call_button" className="call_button" />
       </div>
       <div className="moptro_container">
         <div className="moptro_number_container">
