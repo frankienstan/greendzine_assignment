@@ -229,7 +229,8 @@
     align-items: center;
   }
   .canvas {
-    max-width: 450px;
+    max-width: 440px;
     max-height: 760px;
+    border-radius: 24px;
   }
 }
