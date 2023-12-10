@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Employee from "./Employee";
 import Employee_Details from "./Employee_Details";
-import moptro_logo from "./assets/moptro_logo.png";
-import call from "./assets/call.png";
+import moptro_logo from "/moptro_logo.png";
+import call from "/call.png";
 
 // Employees Component displaying multiple employees
 const Employees = () => {

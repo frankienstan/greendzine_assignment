@@ -1,8 +1,8 @@
 import React from "react";
 import ProgressBar from "./ProgressBar";
 import Navigation from "./Navigation";
-import moptro_logo from "./assets/moptro_logo.png";
-import call from "./assets/call.png";
+import moptro_logo from "/moptro_logo.png";
+import call from "/call.png";
 
 const Dashboard = () => {
   return (
