@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Employee from "./Employee";
-import Employee_Details from "./Employee_Details";
+import Employee_details from "./Employee_details";
 import moptro_logo from "/moptro_logo.png";
 import call from "/call.png";
 
@@ -108,7 +108,7 @@ const Employees = () => {
       </div>
       <div className="emp_list">
         {selectedEmployee ? (
-          <Employee_Details employee={selectedEmployee} />
+          <Employee_details employee={selectedEmployee} />
         ) : (
           searchResults.map((employee) => (
             <Employee
